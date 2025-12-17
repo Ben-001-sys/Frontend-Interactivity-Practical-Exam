@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Interactive Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen p-6 transition-colors">
+
+  <div class="max-w-md mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Interactive Page</h1>
+
+    <!-- Input + Add Button -->
+    <div class="flex gap-2 mb-4">
+      <input
+        id="input"
+        type="text"
+        placeholder="Enter item"
+
+        tabindex="0"
+      />
+
+      <button
+        id="addBtn"
+        class="bg-blue-500 text-white px-4 rounded hover:bg-blue-600"
+        aria-label="Add item"
+        tabindex="0"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button
+      id="themeBtn"
+      class="mb-4 text-sm bg-gray-300 px-3 py-1 rounded hover:bg-gray-400"
+      aria-label="Toggle theme"
+      tabindex="0"
+    >
+      Toggle Theme
+    </button>
+
+    <!-- Card Container -->
+    <div id="cardContainer" class="space-y-2"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
